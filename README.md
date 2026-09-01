@@ -1,85 +1,83 @@
 # RimScent Extended: Industry Expansion
 
-Ce qui brûle, ce qui fond, ce qui est chimique, et les vingt-deux saletés que personne ne
-sentait. RimWorld 1.6.
+What burns, what melts, what is chemical, and the twenty-two filth types nobody could smell.
+For RimWorld 1.6.
 
-## Crématorium, fonderie, fermentation
+## Crematorium, smelter, fermentation
 
-Trois trous du jeu de base, repérés par contraste avec l'inventaire de *Medieval Overhaul* :
-rien de ce mod n'est repris — il n'annonce pas de licence — mais sa liste de bâtiments
-odorants a servi de checklist.
+Three gaps in the base game, spotted by contrast with *Medieval Overhaul*'s inventory: nothing
+from that mod is reused — it declares no licence — but its list of smelly buildings served as a
+checklist.
 
-Le crématorium et la fonderie portent tous deux un `CompProperties_Power` **et** un
-`CompProperties_Flickable` : ils ne sentent donc que sous tension et interrupteur fermé. Ce
-second test est précisément celui que RimScent oubliait et que le correctif du socle a
-ajouté — un crématorium éteint aurait sinon empesté en permanence.
+The crematorium and the smelter both carry a `CompProperties_Power` **and** a
+`CompProperties_Flickable`, so they only smell when powered and switched on. That second test is
+exactly the one RimScent forgot and the socle's fix added — an unlit crematorium would otherwise
+have stunk permanently.
 
-Le fût de fermentation et la brasserie, eux, n'ont aucune alimentation : ils sentiront tout
-le temps. C'est défendable — un fût sent la levure même vide — mais c'est un choix, pas une
-fatalité.
+The fermenting barrel and the brewery have no power connection at all, so they will smell all the
+time. That is defensible — a barrel smells of yeast even empty — but it is a choice, not a
+necessity.
 
-`RimScentExtended_Scent_Fermenting` est partagée avec Everyday Life (bière, moût, cuves
-d'Alpha Crafts) et reste donc **déclarée dans le socle**.
+`RimScentExtended_Scent_Fermenting` is shared with Everyday Life (beer, wort, Alpha Crafts vats)
+and is therefore **declared in the socle**.
 
-## Torches et chimiburant
+## Torches and chemfuel
 
-Torches, braseros et torches murales, à une valeur plus douce que le feu de camp sur lequel
-ils sont calqués. Raffinerie de biocarburant, cuves de chimiburant, et le chimiburant en
-réserve : RimScent couvrait la flaque et les générateurs, jamais le bidon.
+Torches, braziers and wall torches, at a gentler value than the campfire they are modelled on.
+Biofuel refinery, chemfuel tanks, and chemfuel in storage: RimScent covered the puddle and the
+generators, never the drum.
 
-Drogues de synthèse et neutroamine : odeur de produit chimique, la même que les laboratoires
-médicaux.
+Synthetic drugs and neutroamine: chemical smell, the same one the medical labs use.
 
-## Vingt-deux saletés de plus
+## Twenty-two more filth types
 
-RimScent couvre 12 des 42 saletés du jeu de base et des DLC. Ce mod en rattrape 22, dont
-l'écrasante majorité en **réutilisant les pensées de l'amont** : elles existent, elles sont
-traduites, et la saleté manquante est souvent la jumelle d'une saleté déjà couverte — sang
-séché contre sang frais, cendre volcanique contre cendre, gravats contre terre.
+RimScent covers 12 of the 42 filth types in the base game and the DLCs. This mod picks up 22 more,
+the overwhelming majority by **reusing the upstream thoughts**: they exist, they are translated,
+and the missing filth is often the twin of one already covered — dried blood against fresh blood,
+volcanic ash against ash, rubble against dirt.
 
-**Deux de ces pensées étaient définies en amont et accrochées à rien.**
-`RimScent_FirefoamScent`, dont la description parle justement de mousse extinctrice, et
-`RimScent_ExplosionScent`, soufre et ozone. Elles sont branchées enfin.
+**Two of those thoughts were defined upstream and attached to nothing.**
+`RimScent_FirefoamScent`, whose description talks about firefoam, and `RimScent_ExplosionScent`,
+sulphur and ozone. They are finally wired up.
 
-Deux saletés seulement méritaient une odeur à elles : la moisissure et la vase.
+Only two filth types deserved a scent of their own: mould and slime.
 
-Les documents éparpillés, eux, ne sentent pas la crasse mais le papier : ils sont partis
-dans Everyday Life avec les livres et les bibelots.
+Scattered documents, on the other hand, smell of paper rather than grime: they went to Everyday
+Life with the books and the knick-knacks.
 
-## Mods tiers
+## Third-party mods
 
-| Mod | Ce qui sent |
+| Mod | What smells |
 |---|---|
-| **Epochs - Tallow** | torches au suif, torche murale, suif brut |
-| **Epochs - Incense** | ses deux brûle-encens, **avec ses propres pensées** |
-| **Medical Supplements** | sels d'ammoniac, odeur de pharmacie |
-| **Combat Extended** | la pensée poudre noire que RimScent définit pour lui, traduite |
+| **Epochs - Tallow** | tallow torches, wall torch, raw tallow |
+| **Epochs - Incense** | its two incense burners, **using its own thoughts** |
+| **Medical Supplements** | smelling salts, pharmacy smell |
+| **Combat Extended** | the black powder thought RimScent defines for it, translated |
 
-Les torches au suif n'ont pas de `CompRefuelable` mais un `CompProperties_DestroyAfterDelay` :
-elles se détruisent en s'éteignant, donc **une torche qui existe est une torche allumée** —
-le gate est automatique.
+Tallow torches have no `CompRefuelable` but a `CompProperties_DestroyAfterDelay`: they destroy
+themselves when they burn out, so **a torch that exists is a torch that is lit** — the gate is
+automatic.
 
-**Epochs - Incense définit deux `ThoughtDef` que rien n'applique.** `IncenseThought` et
-`StandingIncenseThought`, toutes deux « pleasant smell » à +2, ne sont citées nulle part
-ailleurs que dans leur propre fichier — dans aucun mod du Workshop — et le mod ne contient
-aucune assembly. Ses brûle-encens sont donc purement décoratifs, alors que leur description
-promet « a pleasant floral aroma ». On les branche en réutilisant **les pensées de
-l'auteur** plutôt qu'en créant les nôtres : c'est ce qu'il avait prévu, et aucun double
-compte n'est possible puisque rien d'autre ne les pose.
+**Epochs - Incense defines two `ThoughtDef`s that nothing applies.** `IncenseThought` and
+`StandingIncenseThought`, both "pleasant smell" at +2, are cited nowhere outside their own file —
+in no mod on the Workshop — and the mod ships no assembly. Its incense burners are therefore
+purely decorative, while their description promises "a pleasant floral aroma". They are wired up
+by reusing **the author's own thoughts** rather than creating ours: it is what they intended, and
+no double-counting is possible since nothing else applies them.
 
-## Ordre de chargement
+## Load order
 
-Les opérations de patch s'appliquent dans l'ordre des mods : `About.xml` déclare en
-`loadAfter` **tous** les mods que ce mod patche, pas seulement la famille RimScent.
+Patch operations apply in mod order: `About.xml` declares in `loadAfter` **every** mod this one
+patches, not just the RimScent family.
 
-## Dépendances
+## Requirements
 
 - [RimScent](https://steamcommunity.com/sharedfiles/filedetails/?id=3645569466)
-- RimScent Extended (le socle)
+- RimScent Extended (the socle)
 
-Aucun des quatre mods tiers n'est requis : chaque volet ne se charge que si son mod est
-actif, via `LoadFolders.xml`. Rien n'est écrit dans la sauvegarde.
+None of the four third-party mods is required: each section loads only if its mod is active,
+through `LoadFolders.xml`. Nothing is written to the save.
 
 ## Licence
 
-MIT — voir [LICENSE](LICENSE) et [ATTRIBUTION.md](ATTRIBUTION.md).
+MIT — see [LICENSE](LICENSE) and [ATTRIBUTION.md](ATTRIBUTION.md).
