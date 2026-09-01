@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RimScent Extended: Industry Expansion</name>
+	<author>nelim</author>
+	<packageId>nelim.rimscent.extended.industry</packageId>
+	<description>Burning, smelting, chemicals, and the twenty-two kinds of filth nobody smelled.
+
+WHAT THE BASE GAME WAS MISSING
+- The crematorium and the smelter. Both carry power AND a switch, so they only smell when powered and switched on — that second test is exactly the one RimScent forgot, and that the socle's fix restored. A crematorium that is off would otherwise have reeked forever.
+- Torches, braziers and wall torches, at a gentler value than the campfire they were modelled on.
+- The biofuel refinery, chemfuel tanks, and chemfuel sitting in storage. RimScent covered the puddle and the generators, never the drum.
+- Synthetic drugs and neutroamine: the chemical smell of a medical lab.
+
+TWENTY-TWO MORE FILTH TYPES
+RimScent covers 12 of the game's 42 filth types. This adds 22 more, and the great majority of them REUSE the original mod's own thoughts — they exist, they are translated, and the missing filth is usually the twin of one already covered: dried blood against fresh, volcanic ash against ash, rubble against dirt.
+
+Two of those thoughts had been defined upstream and attached to nothing at all: RimScent_FirefoamScent, whose description is literally about fire foam, and RimScent_ExplosionScent, sulphur and ozone. They are wired up at last.
+
+Only two filth types needed a smell of their own: mould, and slime.
+
+MOD INTEGRATION — each part loads only if the mod it targets is active
+- Epochs - Tallow: tallow torches, wall torches and raw tallow. They carry no refuelable comp but a destroy-after-delay one, so a torch that exists is a torch that is lit and the gate is automatic.
+- Epochs - Incense: its two burners define two ThoughtDefs that nothing anywhere applies, in any mod on the Workshop, and the mod ships no assembly. Its burners are purely decorative while their description promises "a pleasant floral aroma". They are wired to RimScent using THE AUTHOR'S OWN thoughts rather than new ones — it is what he intended, and no double-counting is possible since nothing else applies them.
+- Medical Supplements: smelling salts, and the pharmacy smell.
+- Combat Extended: the blackpowder thought RimScent defines for it, translated.
+
+Ships in English with a French translation injected on top. No save data.
+
+Requires RimScent and RimScent Extended.</description>
+	<modVersion>0.1.0</modVersion>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>reo.RimScent</packageId>
+			<displayName>RimScent</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3645569466</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>nelim.rimscent.extended</packageId>
+			<displayName>RimScent Extended</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>reo.RimScent</li>
+		<!-- Le socle declare RimScentExtended_Scent_Fermenting, partagee avec Everyday
+		     Life, et porte les correctifs du moteur : il faut passer apres lui. -->
+		<li>nelim.rimscent.extended</li>
+		<!-- Les operations de patch s'appliquent dans l'ordre de chargement : il faut
+		     passer apres les mods vises, sinon les xpath ciblent des defs absents. -->
+		<li>det.epochsincense</li>
+		<li>det.epochstallow</li>
+		<li>mlie.medicalsupplements</li>
+		<li>ceteam.combatextended</li>
+	</loadAfter>
+</ModMetaData>

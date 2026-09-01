@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: ammonia -->
+  <RimScentExtended_Scent_SmellingSalts.stages.ammonia.label>ammoniac</RimScentExtended_Scent_SmellingSalts.stages.ammonia.label>
+  <!-- EN: A cutting reek of ammonia. It goes straight up the nose and hurts. -->
+  <RimScentExtended_Scent_SmellingSalts.stages.ammonia.description>Une puanteur d'ammoniac qui coupe le souffle. Ça monte droit au nez et ça fait mal.</RimScentExtended_Scent_SmellingSalts.stages.ammonia.description>
+  <!-- EN: pharmacy smell -->
+  <RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.label>odeur de pharmacie</RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.label>
+  <!-- EN: Surgical alcohol, plastic and something faintly bitter. It smells like being treated. -->
+  <RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.description>De l'alcool chirurgical, du plastique et une pointe d'amertume. Ça sent le fait d'être soigné.</RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.description>
+
+</LanguageData>

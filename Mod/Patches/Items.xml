@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Objets vanilla industriels que RimScent laissait muets. -->
+  <!-- Le chimiburant en reserve. RimScent couvrait la flaque et les generateurs, pas le bidon. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="Chemfuel") and modExtensions]/modExtensions</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="Chemfuel") and modExtensions]/modExtensions</xpath>
+      <value>
+        <li Class="RimScentReworked.ModExtension_Scent">
+          <thought>RimScent_FuelScent</thought>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="Chemfuel") and not(modExtensions)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="Chemfuel") and not(modExtensions)]</xpath>
+      <value>
+        <modExtensions>
+          <li Class="RimScentReworked.ModExtension_Scent">
+            <thought>RimScent_FuelScent</thought>
+          </li>
+        </modExtensions>
+      </value>
+    </match>
+  </Operation>
+
+  <!-- Les drogues de synthese et le neutroamine : odeur de produit chimique, la meme que les laboratoires medicaux. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="Yayo" or defName="Flake" or defName="GoJuice" or defName="Luciferium" or defName="Penoxycyline" or defName="Neutroamine") and modExtensions]/modExtensions</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="Yayo" or defName="Flake" or defName="GoJuice" or defName="Luciferium" or defName="Penoxycyline" or defName="Neutroamine") and modExtensions]/modExtensions</xpath>
+      <value>
+        <li Class="RimScentReworked.ModExtension_Scent">
+          <thought>RimScentExtended_Scent_Pharmacy</thought>
+        </li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[(defName="Yayo" or defName="Flake" or defName="GoJuice" or defName="Luciferium" or defName="Penoxycyline" or defName="Neutroamine") and not(modExtensions)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[(defName="Yayo" or defName="Flake" or defName="GoJuice" or defName="Luciferium" or defName="Penoxycyline" or defName="Neutroamine") and not(modExtensions)]</xpath>
+      <value>
+        <modExtensions>
+          <li Class="RimScentReworked.ModExtension_Scent">
+            <thought>RimScentExtended_Scent_Pharmacy</thought>
+          </li>
+        </modExtensions>
+      </value>
+    </match>
+  </Operation>
+
+
+</Patch>

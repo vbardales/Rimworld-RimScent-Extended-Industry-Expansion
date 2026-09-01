@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Odeurs de produit chimique : Medical Supplements, et les drogues de synthese
+       vanilla. Le parent abstrait est local, pour ne rien devoir a un autre mod. -->
+
+  <ThoughtDef Name="RimScentExtended_LocalScentBase" Abstract="True">
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+  </ThoughtDef>
+
+  <!-- Medical Supplements -->
+
+  <ThoughtDef ParentName="RimScentExtended_LocalScentBase">
+    <defName>RimScentExtended_Scent_SmellingSalts</defName>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>ammonia</label>
+        <description>A cutting reek of ammonia. It goes straight up the nose and hurts.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="RimScentExtended_LocalScentBase">
+    <defName>RimScentExtended_Scent_Pharmacy</defName>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>pharmacy smell</label>
+        <description>Surgical alcohol, plastic and something faintly bitter. It smells like being treated.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Alpha Crafts -->
+
+</Defs>

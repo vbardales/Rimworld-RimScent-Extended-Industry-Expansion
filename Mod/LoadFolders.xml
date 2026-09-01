@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<!-- Racine : About, et l'industrie vanilla, qui ne depend que du jeu de base. -->
+		<li>/</li>
+		<!-- Une cle DefInjected qui vise un def absent est une erreur de chargement,
+		     d'ou le decoupage par IfModActive plutot qu'un dossier unique. -->
+		<li IfModActive="det.epochsincense">EpochsIncense</li>
+		<li IfModActive="det.epochstallow">EpochsTallow</li>
+		<li IfModActive="mlie.medicalsupplements">MedicalSupplements</li>
+		<li IfModActive="ceteam.combatextended">CE</li>
+	</v1.6>
+</loadFolders>
