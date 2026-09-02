@@ -2,37 +2,36 @@
 
 ## RimScent
 
-par **reo / ocarina0001** — MIT.
+by **reo / ocarina0001** — MIT.
 [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3645569466)
 
-Mod compagnon, pas un fork. Aucun fichier de RimScent n'est copié ni redistribué. Il est
-déclaré en dépendance dure et on utilise `RimScentReworked.ModExtension_Scent`, son propre
-point d'extension public.
+A companion mod, not a fork. No file from RimScent is copied or redistributed. It is declared
+as a hard dependency, and we use `RimScentReworked.ModExtension_Scent`, its own public extension
+point.
 
-Vingt des vingt-deux saletés ajoutées **réutilisent les `ThoughtDef` de RimScent** plutôt
-que d'en créer de nouvelles : elles sont citées par leur `defName`, jamais copiées.
+Twenty of the twenty-two added filth types **reuse RimScent's own `ThoughtDef`s** rather than
+creating new ones: they are cited by `defName`, never copied.
 
-## Mods lus par cette extension
+## Mods read by this expansion
 
-Rien n'en est copié. Chacun est visé uniquement par des `PatchOperation`, dans un dossier
-qui ne se charge que si le mod est actif :
+Nothing is copied from them. Each is targeted only by `PatchOperation`s, in a folder that loads
+only if the mod is active:
 
 - **Epochs - Tallow** (`det.epochstallow`)
-- **Epochs - Incense** (`det.epochsincense`) — ses deux `ThoughtDef` orphelines sont
-  **réutilisées telles quelles**, par `defName`, sans être recopiées ni modifiées.
+- **Epochs - Incense** (`det.epochsincense`) — its two orphaned `ThoughtDef`s are **reused as
+  they are**, by `defName`, without being copied or modified.
 - **Medical Supplements** (`mlie.medicalsupplements`)
-- **Combat Extended** (`ceteam.combatextended`) — seule une traduction française y est
-  ajoutée, pour une pensée que RimScent définit lui-même.
+- **Combat Extended** (`ceteam.combatextended`) — only a French translation is added, for a
+  thought RimScent defines itself.
 
 ## Medieval Overhaul
 
-par **DankPyon** — pas de licence annoncée.
+by **DankPyon** — no licence declared.
 
-**Rien n'en est repris** : ni def, ni texture, ni valeur. Sa liste de bâtiments odorants a
-servi de checklist pour repérer ce que le jeu de base laissait muet ; les trois odeurs qui
-en sont sorties (crématorium, fonderie, fermentation) sont écrites ici de zéro et visent des
-defs vanilla.
+**Nothing is taken from it**: no def, no texture, no value. Its list of smelly buildings served
+as a checklist for spotting what the base game left silent; the three smells that came out of it
+(crematorium, smelter, fermentation) are written here from scratch and target vanilla defs.
 
-## Ce mod
+## This mod
 
-MIT, © nelim. Defs, patchs et traductions sont un travail original.
+MIT, © nelim. Defs, patches and translations are original work.
