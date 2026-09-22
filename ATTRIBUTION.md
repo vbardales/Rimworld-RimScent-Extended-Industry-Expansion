@@ -34,4 +34,4 @@ as a checklist for spotting what the base game left silent; the three smells tha
 
 ## This mod
 
-MIT, © nelim. Defs, patches and translations are original work.
+MIT, © Nelim. Defs, patches and translations are original work.
