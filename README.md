@@ -1,4 +1,7 @@
-# RimScent Extended: Industry Expansion
+# RimScent Extended: Industry Expansion (unofficial)
+
+UNOFFICIAL. This mod is published without the original author's explicit consent.
+If the original author contacts me to request its removal, I undertake to take it down promptly.
 
 What burns, what melts, what is chemical, and the twenty-two filth types nobody could smell.
 For RimWorld 1.6.

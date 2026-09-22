@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>RimScent Extended: Industry Expansion</name>
+	<name>RimScent Extended: Industry Expansion (unofficial)</name>
 	<author>Nelim</author>
 	<packageId>nelim.rimscent.extended.industry</packageId>
-	<description>Burning, smelting, chemicals, and the twenty-two kinds of filth nobody smelled.
+	<url>https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion</url>
+	<description>UNOFFICIAL. This mod is published without the original author's explicit consent.
+If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+Burning, smelting, chemicals, and the twenty-two kinds of filth nobody smelled.
 
 WHAT THE BASE GAME WAS MISSING
 - The crematorium and the smelter. Both carry power AND a switch, so they only smell when powered and switched on — that second test is exactly the one RimScent forgot, and that the socle's fix restored. A crematorium that is off would otherwise have reeked forever.
@@ -26,7 +30,9 @@ MOD INTEGRATION — each part loads only if the mod it targets is active
 
 Ships in English with a French translation injected on top. No save data.
 
-Requires RimScent and RimScent Extended.</description>
+Requires RimScent and RimScent Extended.
+
+[url=https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion]Source code on GitHub[/url]</description>
 	<modVersion>0.1.0</modVersion>
 	<supportedVersions>
 		<li>1.6</li>

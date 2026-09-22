@@ -3,12 +3,12 @@ settings_audit: not_applicable
 localization: partial
 translation_en: complete
 translation_fr: partial
-mod:          RimScent Extended: Industry Expansion
+mod:          RimScent Extended: Industry Expansion (unofficial)
 packageId:    nelim.rimscent.extended.industry
 repo:         Rimworld-RimScent-Extended-Industry-Expansion
 visibility:   public
 detached:     yes
-stage:        dansMonoRepo
+stage:        horsMonoRepo
 licence:      silent
 licence_at:   Medieval Overhaul declares no licence
 dependencies: declared
@@ -16,9 +16,6 @@ showcase:     complete
 tested_on:
 workshop:
 remaining:
-  - defect: public silent status lacks the required " (unofficial)" title suffix and opening disclaimer
-  - defect: About.xml lacks both the repository URL and the required final Steam-format source-code link
-  - pending: CHANGELOG.md and repository hygiene files are absent from the new standalone repository
   - unverified: French CE DefInjected target could not be resolved because Combat Extended is not available in this audit scope
   - unverified: no automated/XML-result or functional/Pickle scenario artefacts exist for the preTest-to-done gate
   - unverified: never seen running, including hard/optional dependency loading, effects, logs, English/French display, and save behaviour
@@ -123,3 +120,12 @@ The rebase preserved the pre-existing remote history and replayed this initializ
 This establishes `detached: yes` and the remote/first-push portion of the transition. The
 cumulative stage remains `dansMonoRepo` because the mandatory first-transition documentation
 is still incomplete. No Workshop change or RimWorld run was made.
+
+## horsMonoRepo completion — 2026-09-22
+
+The standalone repository, `origin` remote, and pushed `main` branch are now established.
+The first-transition documentation is English and complete: `README.md`, `ATTRIBUTION.md`,
+root and distributed MIT `LICENSE` copies, `CHANGELOG.md`, `.gitignore`, and `.gitattributes`.
+The recorded public `silent` decision is reflected in the exact `(unofficial)` title suffix and
+opening notice. `About.xml` now contains the repository URL and ends with the required
+Steam-formatted source-code link. The cumulative workflow stage is therefore `horsMonoRepo`.
