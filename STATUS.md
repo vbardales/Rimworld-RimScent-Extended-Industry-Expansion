@@ -8,7 +8,7 @@ packageId:    nelim.rimscent.extended.industry
 repo:         Rimworld-RimScent-Extended-Industry-Expansion
 visibility:   public
 detached:     yes
-stage:        horsMonoRepo
+stage:        options
 licence:      silent
 licence_at:   Medieval Overhaul declares no licence
 dependencies: declared
@@ -129,3 +129,21 @@ root and distributed MIT `LICENSE` copies, `CHANGELOG.md`, `.gitignore`, and `.g
 The recorded public `silent` decision is reflected in the exact `(unofficial)` title suffix and
 opening notice. `About.xml` now contains the repository URL and ends with the required
 Steam-formatted source-code link. The cumulative workflow stage is therefore `horsMonoRepo`.
+
+## Static progression to options — 2026-09-22
+
+The independent evidence recorded by the audit now establishes the next three transitions:
+
+- `horsMonoRepo` -> `ModIcon générée`: the delivered `Mod/About/ModIcon.png` is a directly
+  inspected 128 x 128 PNG (23,173 bytes). This XML-only project ships no compilable assembly.
+- `ModIcon générée` -> `Preview générée`: the delivered `Mod/About/Preview.png` is a directly
+  inspected 896 x 504 PNG (692,624 bytes), below the Workshop one-megabyte limit.
+- `Preview générée` -> `preOptions`: the Preview has distinct amber and green accents, and the
+  English description, public naming, repository URL, and final source-code link are present.
+- `preOptions` -> `options`: there is no C# project, settings implementation, `ModSettings`,
+  or `MainButtonDef`; no useful setting, empty settings page, or shortcut is exposed. The
+  existing `settings_audit: not_applicable` therefore satisfies this static gate.
+
+The cumulative stage is `options`. `l10n` is not yet established because the French Combat
+Extended DefInjected target remains unresolved; no in-game result is inferred from this
+static progression.
