@@ -8,7 +8,7 @@ packageId:    nelim.rimscent.extended.industry
 repo:         Rimworld-RimScent-Extended-Industry-Expansion
 visibility:   public
 detached:     yes
-stage:        l10n
+stage:        preTest
 licence:      silent
 licence_at:   Medieval Overhaul declares no licence
 dependencies: declared
@@ -161,3 +161,14 @@ English coverage. This validates `localization`, `translation_en`, and `translat
 entry to `preTest`; French and English display in a running game remain unverified.
 
 The cumulative stage is `l10n`.
+
+## preTest entry — 2026-09-22
+
+Static dependency review establishes `l10n` -> `preTest`. `About.xml` declares the two
+hard dependencies actually used by this extension: `reo.RimScent` and
+`nelim.rimscent.extended`. The four optional payload roots (`CE`, `EpochsIncense`,
+`EpochsTallow`, and `MedicalSupplements`) each have a matching `IfModActive` LoadFolders
+gate and `loadAfter` declaration. All 21 distributed XML files parse successfully.
+
+This verifies the declarations and conditional layout, not the presence of external mods,
+patch-target resolution, or runtime behaviour. The cumulative stage is `preTest`.
