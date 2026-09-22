@@ -1,14 +1,14 @@
 ---
 settings_audit: not_applicable
-localization: partial
+localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 mod:          RimScent Extended: Industry Expansion (unofficial)
 packageId:    nelim.rimscent.extended.industry
 repo:         Rimworld-RimScent-Extended-Industry-Expansion
 visibility:   public
 detached:     yes
-stage:        options
+stage:        l10n
 licence:      silent
 licence_at:   Medieval Overhaul declares no licence
 dependencies: declared
@@ -16,7 +16,6 @@ showcase:     complete
 tested_on:
 workshop:
 remaining:
-  - unverified: French CE DefInjected target could not be resolved because Combat Extended is not available in this audit scope
   - unverified: no automated/XML-result or functional/Pickle scenario artefacts exist for the preTest-to-done gate
   - unverified: never seen running, including hard/optional dependency loading, effects, logs, English/French display, and save behaviour
 session:      audit:      2026-09-22, static evidence only
@@ -147,3 +146,18 @@ The independent evidence recorded by the audit now establishes the next three tr
 The cumulative stage is `options`. `l10n` is not yet established because the French Combat
 Extended DefInjected target remains unresolved; no in-game result is inferred from this
 static progression.
+
+## l10n completion — 2026-09-22
+
+The missing target was traced correctly: `RimScent_BlackpowderOdor` is not defined by Combat
+Extended, but by RimScent's `1.6/Mods/Combat Extended` module when CE is active. RimScent
+Workshop item `3645569466` was downloaded into an ignored WSL test directory; its
+`CE_BlackpowderScent.xml` defines that ThoughtDef with the `blackpowder_odor` stage handle.
+
+`Check-DefInjected.ps1` was then run against a minimal ignored target containing the eight
+local ThoughtDefs plus that downloaded RimScent/CE module. It checked all 18 French
+DefInjected entries with `0` errors. The eight English source Def values are the native
+English coverage. This validates `localization`, `translation_en`, and `translation_fr` for
+entry to `preTest`; French and English display in a running game remain unverified.
+
+The cumulative stage is `l10n`.
