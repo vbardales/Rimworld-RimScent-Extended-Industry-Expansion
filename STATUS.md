@@ -16,7 +16,7 @@ showcase:     complete
 tested_on:
 workshop:
 remaining:
-  - unverified: no automated/XML-result or functional/Pickle scenario artefacts exist for the preTest-to-done gate
+  - unverified: no Pickle Gherkin suite has been written; its in-game execution and capture review remain required for tested
   - unverified: never seen running, including hard/optional dependency loading, effects, logs, English/French display, and save behaviour
 session:      audit:      2026-09-22, static evidence only
 updated:      2026-09-22, evidence-based audit
@@ -172,3 +172,15 @@ gate and `loadAfter` declaration. All 21 distributed XML files parse successfull
 
 This verifies the declarations and conditional layout, not the presence of external mods,
 patch-target resolution, or runtime behaviour. The cumulative stage is `preTest`.
+
+## Offline test result — 2026-09-22
+
+`powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tests/Check-Mod.ps1` passed.
+It checked all 21 distributed XML files, the delivered metadata and source-link contract,
+hard dependencies and optional LoadFolders gates, 16 local French ThoughtDef fields, and
+the dimensions/size limits of both delivered PNG files. `TEST_SCENARIOS.md` now records
+the base-game, optional-integration, and EN/FR regression scenarios for a later game run.
+
+This is an offline XML/contract result only. It does not establish patch-target resolution
+against every external mod, gameplay effects, logs, saves, Pickle results, captures, or
+translated display in RimWorld.
