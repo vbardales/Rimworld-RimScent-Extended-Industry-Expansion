@@ -7,7 +7,7 @@ mod:          RimScent Extended: Industry Expansion
 packageId:    nelim.rimscent.extended.industry
 repo:         Rimworld-RimScent-Extended-Industry-Expansion
 visibility:   public
-detached:     no
+detached:     yes
 stage:        dansMonoRepo
 licence:      silent
 licence_at:   Medieval Overhaul declares no licence
@@ -18,7 +18,8 @@ workshop:
 remaining:
   - defect: public silent status lacks the required " (unofficial)" title suffix and opening disclaimer
   - defect: About.xml lacks both the repository URL and the required final Steam-format source-code link
-  - pending: standalone repository, GitHub remote, and first pushed commit; CHANGELOG.md and repository hygiene files are also absent
+  - unverified: the initial local commit has not been pushed to origin or verified against GitHub
+  - pending: CHANGELOG.md and repository hygiene files are absent from the new standalone repository
   - unverified: French CE DefInjected target could not be resolved because Combat Extended is not available in this audit scope
   - unverified: no automated/XML-result or functional/Pickle scenario artefacts exist for the preTest-to-done gate
   - unverified: never seen running, including hard/optional dependency loading, effects, logs, English/French display, and save behaviour
@@ -109,3 +110,15 @@ If/when the mod is detached, the delivered `About.xml` still needs its repositor
 and the required final `[url=URL_DU_DEPOT]Source code on GitHub[/url]` description link.
 `CHANGELOG.md`, `.gitignore`, and `.gitattributes` are also absent from this project.
 These observations do not change the already-blocked `dansMonoRepo` result.
+
+## Standalone repository initialization — 2026-09-22
+
+After the audit, this directory was initialized directly as its own Git repository, without
+a subtree split. It is on the stable `main` branch and contains the audited state in initial
+commit `b47485e` (`Initialize RimScent Extended Industry
+Expansion`). `origin` is configured as
+`https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git`.
+
+This establishes `detached: yes` locally. The cumulative stage remains `dansMonoRepo` until
+the initial commit is pushed and the remote project and mandatory first-transition
+documentation are verified. No push, remote query, Workshop change, or RimWorld run was made.
