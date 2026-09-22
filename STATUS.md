@@ -18,7 +18,6 @@ workshop:
 remaining:
   - defect: public silent status lacks the required " (unofficial)" title suffix and opening disclaimer
   - defect: About.xml lacks both the repository URL and the required final Steam-format source-code link
-  - unverified: the initial local commit has not been pushed to origin or verified against GitHub
   - pending: CHANGELOG.md and repository hygiene files are absent from the new standalone repository
   - unverified: French CE DefInjected target could not be resolved because Combat Extended is not available in this audit scope
   - unverified: no automated/XML-result or functional/Pickle scenario artefacts exist for the preTest-to-done gate
@@ -119,6 +118,8 @@ commit `b47485e` (`Initialize RimScent Extended Industry
 Expansion`). `origin` is configured as
 `https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git`.
 
-This establishes `detached: yes` locally. The cumulative stage remains `dansMonoRepo` until
-the initial commit is pushed and the remote project and mandatory first-transition
-documentation are verified. No push, remote query, Workshop change, or RimWorld run was made.
+The rebase preserved the pre-existing remote history and replayed this initialization as
+`b47485e`; the branch was then pushed and verified at `1f157c8758bea60bee02bbedd2062b08f44f0312`.
+This establishes `detached: yes` and the remote/first-push portion of the transition. The
+cumulative stage remains `dansMonoRepo` because the mandatory first-transition documentation
+is still incomplete. No Workshop change or RimWorld run was made.
