@@ -16,10 +16,11 @@ showcase:     complete
 tested_on:
 workshop:
 remaining:
-  - unverified: no Pickle Gherkin suite has been written; its in-game execution and capture review remain required for tested
-  - unverified: never seen running, including hard/optional dependency loading, effects, logs, English/French display, and save behaviour
+  - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
+  - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
+  - unverified: reported prepublication has no delivered Mod/About/PublishedFileId.txt, locally or on origin/main
 session:      audit:      2026-09-22, static evidence only
-updated:      2026-09-22, evidence-based audit
+updated:      2026-09-26, evidence-based re-audit
 ---
 
 # RimScent Extended: Industry Expansion — status
@@ -184,3 +185,30 @@ the base-game, optional-integration, and EN/FR regression scenarios for a later 
 This is an offline XML/contract result only. It does not establish patch-target resolution
 against every external mod, gameplay effects, logs, saves, Pickle results, captures, or
 translated display in RimWorld.
+
+## Re-audit — 2026-09-26
+
+`AUDIT.md` was reread and applied at standalone revision
+`a129858f5d890d53d172cd7f0e7409c299f0b3f0`. The session title is
+`RimScent Extended: Industry Expansion (unofficial) / preTest`, exactly matching
+the current `stage`.
+
+The owner reports a private prepublication of 0.1.0. The required delivered
+`Mod/About/PublishedFileId.txt` is absent from this checkout and from the current
+`origin/main`, so no Workshop identifier or prepublication completion is claimed
+from the repository evidence. No `.dds`, `Tests/Pickle/Evidence/`, or
+`docs/runs/` evidence was tracked or present to remove. `.gitignore` now excludes
+generated `.dds` files and on-disk Pickle evidence. `TEST_SCENARIOS.md` specifies
+that only `summary.json` and `junit.xml` are retained after a successful pass;
+`Player.log` is retained only for failures/incomplete runs and visual proof only
+when indispensable.
+
+The upstream companion repository `RimScentExtended` is a standalone Git
+repository (`origin` `vbardales/Rimworld-RimScent-Extended`, revision `e73680a`)
+with a Pickle suite. Its code/tests are a reference for future upstream PR work;
+they are not evidence that this expansion's XML patches have run.
+
+The stage remains `preTest`. To reach `done`, this repository needs its own
+written, non-`@wip` Gherkin coverage for the behaviour that only a running game
+can show. To reach `tested`, all of those scenarios, including each conditional
+integration pass, must finish green and leave no manual validation pending.
