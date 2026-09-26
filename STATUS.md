@@ -18,7 +18,7 @@ workshop:
 remaining:
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
-  - unverified: reported prepublication has no delivered Mod/About/PublishedFileId.txt, locally or on origin/main
+  - unverified: no prepublication has occurred; Mod/About/PublishedFileId.txt and the Workshop item remain absent
 session:      audit:      2026-09-22, static evidence only
 updated:      2026-09-26, evidence-based re-audit
 ---
@@ -193,12 +193,13 @@ translated display in RimWorld.
 `RimScent Extended: Industry Expansion (unofficial) / preTest`, exactly matching
 the current `stage`.
 
-The owner reports a private prepublication of 0.1.0. The required delivered
-`Mod/About/PublishedFileId.txt` is absent from this checkout and from the current
-`origin/main`, so no Workshop identifier or prepublication completion is claimed
-from the repository evidence. No `.dds`, `Tests/Pickle/Evidence/`, or
-`docs/runs/` evidence was tracked or present to remove. `.gitignore` now excludes
-generated `.dds` files and on-disk Pickle evidence. `TEST_SCENARIOS.md` specifies
+No prepublication has occurred. The required delivered
+`Mod/About/PublishedFileId.txt` is absent from this checkout and `origin/main`,
+and no junction in RimWorld's `Mods/` directory targets this mod's delivered
+`Mod/` folder. No Workshop identifier or prepublication completion is claimed.
+No `.dds`, `Tests/Pickle/Evidence/`, or `docs/runs/` evidence was tracked or
+present to remove. `.gitignore` now excludes generated `.dds` files and on-disk
+Pickle evidence. `TEST_SCENARIOS.md` specifies
 that only `summary.json` and `junit.xml` are retained after a successful pass;
 `Player.log` is retained only for failures/incomplete runs and visual proof only
 when indispensable.
