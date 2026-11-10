@@ -2,13 +2,13 @@
 settings_audit: not_applicable
 localization: complete
 translation_en: complete
-translation_fr: complete
+translation_fr: unchecked
 mod:          RimScent Extended: Industry Expansion (unofficial)
 packageId:    nelim.rimscent.extended.industry
 repo:         Rimworld-RimScent-Extended-Industry-Expansion
 visibility:   public
 detached:     yes
-stage:        preTest
+workflow_stage: setupRepo
 licence:      silent
 licence_at:   Medieval Overhaul declares no licence
 dependencies: declared
@@ -16,11 +16,14 @@ showcase:     complete
 tested_on:
 workshop:
 remaining:
+  - defect: 1.h STATUS.md not built from templates/STATUS.template.md (missing remote, upstream_mod_remotes, published, tested_on value)
+  - unverified: 1.a no duplicate-mod check recorded (Search-Workshop.sh, owner approval for ~5 min cost)
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - unverified: no prepublication has occurred; Mod/About/PublishedFileId.txt and the Workshop item remain absent
 session:      audit:      2026-09-22, static evidence only
-updated:      2026-09-26, evidence-based re-audit
+updated:      2026-11-10, replay-audit: first open 1.h, workflow_stage setupRepo
+protocols_read_sha: 816aff0264fc7d77b358ccfc5d1c08faa0a52717
 ---
 
 # RimScent Extended: Industry Expansion — status
