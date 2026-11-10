@@ -1,0 +1,22 @@
+{
+  "panel": {
+    "title": "RimScent Extended: Industry Expansion (unofficial)",
+    "titleParts": [
+      { "text": "RimScent" },
+      { "text": "Extended:", "font": "ui", "scale": 0.56 },
+      { "text": "Industry Expansion" },
+      { "text": "Expansion (unofficial)", "suffix": true }
+    ],
+    "description": "Smoke, hot metal and chemfuel. Work smells like work."
+  },
+  "background": { "file": "Preview-source.png" },
+  "icon": { "file": "ModIcon-source.png" },
+  "echo": { "file": "echo.png" },
+  "palette": {
+    "veil": "#292823",
+    "inkPrimary": "#F1ECE2",
+    "inkSecondary": "#C6A56B",
+    "accent": "#D9953E",
+    "badgeInk": "#14130F"
+  }
+}
