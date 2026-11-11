@@ -20,13 +20,15 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
+  - unverified: 8.c Pickle tickets filed 2026-11-11 at 077d41a: pass 1 (01, 02, no optionals) 20261111-181718-162-94c8 into Tests/Pickle/Inbox/pass1-initial; pass 3 (03-french, French) 20261111-181720-555-b6c2 into Tests/Pickle/Inbox/pass3-french; at RUN_DONE read summary.json then junit.xml, triage the Inbox
+  - feature: PUBLICATION.md not written yet (not gallery work, can be done while tickets wait)
   - unverified: 8.c nothing has run in a game yet (Pickle passes 1 and 3 to file; pass 2 blocked: Epochs - Tallow 3502180016 and Epochs - Incense 3072579620 not on disk)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, replay-audit: 1.a to 7.i done, Pickle suite written, first open 8.c
+updated: 2026-11-11, playTests: 2 Pickle tickets filed (passes 1 and 3), waiting for RUN_DONE
 protocols_read_sha: 1861c70dfe862f33f830d0250067fe4849fd0908
 ---
 
