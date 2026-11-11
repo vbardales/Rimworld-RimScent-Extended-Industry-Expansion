@@ -22,7 +22,7 @@ Languages: French (18 keys, 0 missing against English). English is the source si
 | `RimScentExtended_Scent_Crematorium.stages.crematorium_smoke.label` | crematorium smoke | crematorium smoke | fumée de crémation |  |
 | `RimScentExtended_Scent_Crematorium.stages.crematorium_smoke.description` | Burnt hair, scorched fat and hot ash. Everyone knows what is being burned in there. | Burnt hair, scorched fat and hot ash. Everyone knows what is being burned in there. | Des cheveux brûlés, de la graisse calcinée et de la cendre chaude. Tout le monde sait ce qu'on brûle là-dedans. |  |
 | `RimScentExtended_Scent_Smelter.stages.hot_metal.label` | hot metal | hot metal | métal chaud |  |
-| `RimScentExtended_Scent_Smelter.stages.hot_metal.description` | Scorched metal and slag, with a flat mineral tang behind it. | Scorched metal and slag, with a flat mineral tang behind it. | Du métal brûlant et des scories, avec un arrière-goût minéral et plat. |  |
+| `RimScentExtended_Scent_Smelter.stages.hot_metal.description` | Scorched metal and slag, with a flat mineral tang behind it. | Scorched metal and slag, with a flat mineral tang behind it. | Du métal brûlé et des scories, avec, en arrière-plan, une note minérale plate. |  |
 
 ## French/DefInjected/ThoughtDef/Scents_Pharmacy.xml
 
@@ -31,7 +31,7 @@ Languages: French (18 keys, 0 missing against English). English is the source si
 | `RimScentExtended_Scent_SmellingSalts.stages.ammonia.label` | ammonia | ammonia | ammoniac |  |
 | `RimScentExtended_Scent_SmellingSalts.stages.ammonia.description` | A cutting reek of ammonia. It goes straight up the nose and hurts. | A cutting reek of ammonia. It goes straight up the nose and hurts. | Une puanteur d'ammoniac qui coupe le souffle. Ça monte droit au nez et ça fait mal. |  |
 | `RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.label` | pharmacy smell | pharmacy smell | odeur de pharmacie |  |
-| `RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.description` | Surgical alcohol, plastic and something faintly bitter. It smells like being treated. | Surgical alcohol, plastic and something faintly bitter. It smells like being treated. | De l'alcool chirurgical, du plastique et une pointe d'amertume. Ça sent le fait d'être soigné. |  |
+| `RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.description` | Surgical alcohol, plastic and something faintly bitter. It smells like being treated. | Surgical alcohol, plastic and something faintly bitter. It smells like being treated. | De l'alcool chirurgical, du plastique et une pointe d'amertume. Ça sent les soins. |  |
 
 ## French/DefInjected/ThoughtDef/Scents_Torches.xml
 
@@ -51,8 +51,8 @@ Languages: French (18 keys, 0 missing against English). English is the source si
 
 | Key or path | Original | English | French | ? |
 |---|---|---|---|---|
-| `RimScent_BlackpowderOdor.stages.blackpowder_odor.label` |  |  | odeur de poudre noire |  |
-| `RimScent_BlackpowderOdor.stages.blackpowder_odor.description` |  |  | L'odeur de la poudre noire, soufrée et fumée, évoque une pointe de nostalgie. |  |
+| `RimScent_BlackpowderOdor.stages.blackpowder_odor.label` | blackpowder odor | blackpowder odor | odeur de poudre noire |  |
+| `RimScent_BlackpowderOdor.stages.blackpowder_odor.description` | The odor of blackpowder, sulfurous and smokey, it envokes a small bit of nostolgia. | The odor of blackpowder, sulfurous and smokey, it envokes a small bit of nostolgia. | L'odeur de la poudre noire, soufrée et fumée, évoque une pointe de nostalgie. |  |
 
 ## Review line (Virginie only)
 
