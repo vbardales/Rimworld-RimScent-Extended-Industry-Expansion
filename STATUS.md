@@ -20,15 +20,15 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
-  - unverified: 8.c Pickle runs of 2026-11-11 read and Inbox triaged (all report folders deleted): pass 1 (94c8) 3 of 11 green; 80f0 (S1-S5) only S4 green; 96f1 (S8-S10) red on the power step; pass 3 (b6c2, F1) red. ROOT CAUSE of S1, S2, S3, S5 and F1 (not a mod defect, the Filth.xml patches are fine): upstream RimScent (default uncappedScents false) keeps ONE scent per pawn, highest magnitude wins and a new one replaces the active one only if strictly stronger; Larson holds 4x RimScent_DirtScent (magnitude 4, junit of b6c2) so Mould (2), Slime (1), Firefoam (1) never show. Fix in progress: the scene needs Larson's surroundings clean before the filth spawns (asked NPT/PiT 2026-11-12 for a filth-clearing step in a mapped bundle, `all filth is cleaned` exists only in ScreenshotStudio, or a reo.rimscent uncappedScents setting step). S8-S10 switched to the plain `is powered` step (NPT option b), not refiled yet. Refile S1-S5, S8-S10 and F1 as small tickets once the clean-scene step exists
+  - unverified: 8.c Pickle runs of 2026-11-11 read and Inbox triaged (all report folders deleted): pass 1 (94c8) 3 of 11 green; 80f0 (S1-S5) only S4 green; 96f1 (S8-S10) red on the power step; pass 3 (b6c2, F1) red. ROOT CAUSE of S1, S2, S3, S5 and F1 (not a mod defect, the Filth.xml patches are fine): upstream RimScent (default uncappedScents false) keeps ONE scent per pawn, highest magnitude wins and a new one replaces the active one only if strictly stronger; Larson holds 4x RimScent_DirtScent (magnitude 4, junit of b6c2) so Mould (2), Slime (1), Firefoam (1) never show. Fix in progress: the scene needs Larson's surroundings clean before the filth spawns (asked NPT/PiT 2026-11-12 for a filth-clearing step in a mapped bundle, `all filth is cleaned` exists only in ScreenshotStudio, or a reo.rimscent uncappedScents setting step). S8-S10 switched to the plain `is powered` step (NPT option b), not refiled yet. NPT 8530c4a added `the filth within N cells of the colonist ... is removed` (ColonistRace); features 02, 03, 04 now clear the filth within 12 cells of Larson first (1479dc5). Tickets filed 2026-11-12 at 1479dc5: 54d5 (S1-S5, S8-S10, Inbox/pass1d-scents), cf0b (F1 French, Inbox/pass3b-french), aea0 (pass 2 optionals O1-O4, Inbox/pass2-facultatifs); at RUN_DONE read summary.json then junit.xml, triage the Inbox
   - feature: PUBLICATION.md not written yet (not gallery work, can be done while tickets wait)
-  - unverified: 8.c pass 2 (optional integrations) not filed yet: Epochs - Tallow 3502180016 and Epochs - Incense 3072579620 are back on disk (Audit, 2026-11-11); file it with the next batch
+  - unverified: 8.c pass 2 filed as aea0 (see the line above)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, playTests: 2 Pickle tickets filed (passes 1 and 3), waiting for RUN_DONE
+updated: 2026-11-12, playTests: 3 Pickle tickets filed (54d5, cf0b, aea0), waiting for RUN_DONE
 protocols_read_sha: 3937f9048f97c0e3cd28ab4c492ddef003895f23
 ---
 
