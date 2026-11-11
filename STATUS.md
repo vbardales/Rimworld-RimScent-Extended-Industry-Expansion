@@ -5,7 +5,7 @@ repo: Rimworld-RimScent-Extended-Industry-Expansion
 remote: https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git
 visibility: public
 detached: yes
-workflow_stage: code[1.0.0]
+workflow_stage: declareDependencies[1.0.0]
 licence: silent
 licence_at: "2026-09-22: Medieval Overhaul declares no licence; it served only as a checklist, RimScent (MIT) is a dependency"
 upstream_mod_remotes: N/A
@@ -19,13 +19,14 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
-  - defect: 3.c CHANGELOG.md has no ## [Unreleased] section for 1.0.0 (only 0.1.0); Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
+  - defect: 4.a About.xml nelim.rimscent.extended lacks the Workshop id (item 3811307392); 4.g dated dependency record and workshop_required_items missing in STATUS.md
+  - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
-  - defect: prepublication exists (Workshop id 3811308567, Mod/About/PublishedFileId.txt untracked); STATUS fields workshop and published not updated, file not committed
+  - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, replay-audit: 1.a to 2.g done (ModIcon.png regenerated), first open 3.c
-protocols_read_sha: 284895d4caab780cf4dbd0ced22f849b70358c38
+updated: 2026-11-11, replay-audit: 1.a to 4.f done, first open 4.a
+protocols_read_sha: 45357975862be47b344cc129a47910946cba3ac9
 ---
 
 # RimScent Extended: Industry Expansion — status
