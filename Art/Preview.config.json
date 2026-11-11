@@ -5,7 +5,7 @@
       { "text": "RimScent" },
       { "text": "Extended:", "font": "ui", "scale": 0.56 },
       { "text": "Industry Expansion" },
-      { "text": "Expansion (unofficial)", "suffix": true }
+      { "text": "(unofficial)", "suffix": true }
     ],
     "description": "Smoke, hot metal and chemfuel. Work smells like work."
   },
