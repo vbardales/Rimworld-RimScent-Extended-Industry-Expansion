@@ -13,7 +13,7 @@ Languages: French (18 keys, 0 missing against English). English is the source si
 | `RimScentExtended_Scent_Mould.stages.mould.label` | mould | mould | moisissure |  |
 | `RimScentExtended_Scent_Mould.stages.mould.description` | Damp cloth left too long in the dark. Musty, and it catches in the throat. | Damp cloth left too long in the dark. Musty, and it catches in the throat. | Du tissu humide laissé trop longtemps dans le noir. Une odeur de renfermé, qui prend à la gorge. |  |
 | `RimScentExtended_Scent_Slime.stages.slime.label` | slime | slime | limon |  |
-| `RimScentExtended_Scent_Slime.stages.slime.description` | A cold, organic film underfoot. It smells faintly of pond water and something else. | A cold, organic film underfoot. It smells faintly of pond water and something else. | Une pellicule froide et organique sous les pieds. Ça sent vaguement l'eau stagnante, et autre chose. |  |
+| `RimScentExtended_Scent_Slime.stages.slime.description` | A cold, organic film underfoot. It smells faintly of pond water and something else. | A cold, organic film underfoot. It smells faintly of pond water and something else. | Une pellicule froide et organique sous les pieds. Ça sent vaguement l'eau d'étang, et autre chose. |  |
 
 ## French/DefInjected/ThoughtDef/Scents_Industry.xml
 
@@ -29,7 +29,7 @@ Languages: French (18 keys, 0 missing against English). English is the source si
 | Key or path | Original | English | French | ? |
 |---|---|---|---|---|
 | `RimScentExtended_Scent_SmellingSalts.stages.ammonia.label` | ammonia | ammonia | ammoniac |  |
-| `RimScentExtended_Scent_SmellingSalts.stages.ammonia.description` | A cutting reek of ammonia. It goes straight up the nose and hurts. | A cutting reek of ammonia. It goes straight up the nose and hurts. | Une puanteur d'ammoniac qui coupe le souffle. Ça monte droit au nez et ça fait mal. |  |
+| `RimScentExtended_Scent_SmellingSalts.stages.ammonia.description` | A cutting reek of ammonia. It goes straight up the nose and hurts. | A cutting reek of ammonia. It goes straight up the nose and hurts. | Une puanteur âcre d'ammoniac. Ça monte droit au nez et ça fait mal. |  |
 | `RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.label` | pharmacy smell | pharmacy smell | odeur de pharmacie |  |
 | `RimScentExtended_Scent_Pharmacy.stages.pharmacy_smell.description` | Surgical alcohol, plastic and something faintly bitter. It smells like being treated. | Surgical alcohol, plastic and something faintly bitter. It smells like being treated. | De l'alcool chirurgical, du plastique et une pointe d'amertume. Ça sent les soins. |  |
 
