@@ -46,7 +46,7 @@ Feature: RimScent Industry Expansion scent thoughts reach a colonist
 
   Scenario: S8 a powered and switched on crematorium gives the crematorium thought
     Given Nelim's Pickle Tools: the building "ElectricCrematorium" is spawned at (109, 204)
-    And Nelim's Pickle Tools: the building "ElectricCrematorium" at (109, 204) is powered by a battery
+    And Nelim's Pickle Tools: the building "ElectricCrematorium" at (109, 204) is powered
     And Nelim's Pickle Tools: the building "ElectricCrematorium" at (109, 204) is switched on
     Then Nelim's Pickle Tools: the power of the building "ElectricCrematorium" at (109, 204) is powered
     When I wait 600 ticks
@@ -54,7 +54,7 @@ Feature: RimScent Industry Expansion scent thoughts reach a colonist
 
   Scenario: S9 a powered and switched on smelter gives the smelter thought
     Given Nelim's Pickle Tools: the building "ElectricSmelter" is spawned at (109, 204)
-    And Nelim's Pickle Tools: the building "ElectricSmelter" at (109, 204) is powered by a battery
+    And Nelim's Pickle Tools: the building "ElectricSmelter" at (109, 204) is powered
     And Nelim's Pickle Tools: the building "ElectricSmelter" at (109, 204) is switched on
     Then Nelim's Pickle Tools: the power of the building "ElectricSmelter" at (109, 204) is powered
     When I wait 600 ticks
@@ -62,7 +62,7 @@ Feature: RimScent Industry Expansion scent thoughts reach a colonist
 
   Scenario: S10 a powered but switched off crematorium gives no crematorium thought
     Given Nelim's Pickle Tools: the building "ElectricCrematorium" is spawned at (109, 204)
-    And Nelim's Pickle Tools: the building "ElectricCrematorium" at (109, 204) is powered by a battery
+    And Nelim's Pickle Tools: the building "ElectricCrematorium" at (109, 204) is powered
     And Nelim's Pickle Tools: the building "ElectricCrematorium" at (109, 204) is switched off
     When I wait 600 ticks
     Then Nelim's Pickle Tools: "Larson" currently does not feel the mood thought "RimScentExtended_Scent_Crematorium"
