@@ -30,7 +30,7 @@ remaining:
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
 updated: 2026-11-11, playTests: 2 Pickle tickets filed (passes 1 and 3), waiting for RUN_DONE
-protocols_read_sha: 5551bdc56480f68eafb436e1bb89d60ee6e4b213
+protocols_read_sha: 3937f9048f97c0e3cd28ab4c492ddef003895f23
 ---
 
 # RimScent Extended: Industry Expansion — status
