@@ -5,7 +5,7 @@ repo: Rimworld-RimScent-Extended-Industry-Expansion
 remote: https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git
 visibility: public
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: silent
 licence_at: "2026-09-22: Medieval Overhaul declares no licence; it served only as a checklist, RimScent (MIT) is a dependency"
 upstream_mod_remotes: N/A
@@ -20,14 +20,15 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
-  - defect: 7.d no Pickle suite written yet (Gherkin only in TEST_SCENARIOS.md); steps to ask from NPT
+  - unverified: 8.c nothing has run in a game yet (Pickle passes 1 and 3 to file; pass 2 blocked: Epochs - Tallow 3502180016 and Epochs - Incense 3072579620 not on disk)
+  - feature: a Pickle step that powers a building is asked from NPT (2026-11-11); positive crematorium and smelter scenarios stay unwritten until it exists
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, writeTests: 7.a to 7.c and 7.e to 7.h recorded, first open 7.d
-protocols_read_sha: db692bebc9ba2f8212ad6d1086a6b6f7f3d80cb1
+updated: 2026-11-11, replay-audit: 1.a to 7.i done, Pickle suite written, first open 8.c
+protocols_read_sha: 1861c70dfe862f33f830d0250067fe4849fd0908
 ---
 
 # RimScent Extended: Industry Expansion — status
@@ -186,7 +187,7 @@ patch-target resolution, or runtime behaviour. The cumulative stage is `preTest`
 `powershell.exe -NoProfile -ExecutionPolicy Bypass -File Tests/Check-Mod.ps1` passed.
 It checked all 21 distributed XML files, the delivered metadata and source-link contract,
 hard dependencies and optional LoadFolders gates, 16 local French ThoughtDef fields, and
-the dimensions/size limits of both delivered PNG files. `TEST_SCENARIOS.md` now records
+the dimensions/size limits of both delivered PNG files. `docs/TESTING.md` now records
 the base-game, optional-integration, and EN/FR regression scenarios for a later game run.
 
 This is an offline XML/contract result only. It does not establish patch-target resolution
@@ -206,7 +207,7 @@ and no junction in RimWorld's `Mods/` directory targets this mod's delivered
 `Mod/` folder. No Workshop identifier or prepublication completion is claimed.
 No `.dds`, `Tests/Pickle/Evidence/`, or `docs/runs/` evidence was tracked or
 present to remove. `.gitignore` now excludes generated `.dds` files and on-disk
-Pickle evidence. `TEST_SCENARIOS.md` specifies
+Pickle evidence. `docs/TESTING.md` specifies
 that only `summary.json` and `junit.xml` are retained after a successful pass;
 `Player.log` is retained only for failures/incomplete runs and visual proof only
 when indispensable.
@@ -252,7 +253,7 @@ DLC: none required. `supportedVersions`: 1.6. No animal added, so the four anima
 
 ## writeTests record (2026-11-11, revision 529bab4)
 
-- **Scenarios (7.a):** `TEST_SCENARIOS.md` holds 13 base-game steps, 4 optional integrations and the regression pass. Checked against the English description: the 22 filth types (22 distinct `Filth_*` defNames in `Mod/Patches/Filth.xml`), the own mould and slime thoughts, the Firefoam and Explosion thoughts wired, refinery, tank, stored chemfuel, drugs and neutroamine now each have a step. "RimScent covers 12 of 42 filth types" is a claim about upstream, unchecked. `PUBLICATION.md` does not exist yet (writeDocs).
+- **Scenarios (7.a):** `docs/TESTING.md` holds 13 base-game steps, 4 optional integrations and the regression pass. Checked against the English description: the 22 filth types (22 distinct `Filth_*` defNames in `Mod/Patches/Filth.xml`), the own mould and slime thoughts, the Firefoam and Explosion thoughts wired, refinery, tank, stored chemfuel, drugs and neutroamine now each have a step. "RimScent covers 12 of 42 filth types" is a claim about upstream, unchecked. `PUBLICATION.md` does not exist yet (writeDocs).
 - **Automated tests (7.b, 7.c, 7.e):** no unit-test project, because the mod is XML only with no C#. Harness: `Tests/Check-Mod.ps1` (dependencies, loadAfter and LoadFolders gates; validated in `scripts/LOCAL_SCRIPTS.md`), run 2026-11-11: PASS. Shared checks run 2026-11-11: `Check-ModBasics` PASS (21 XML files), `Check-Translations` PASS, `Check-DefInjected` 18 keys 0 errors.
 - **Tested revision (7.f):** 529bab4 for the static checks above. No game run has happened.
-- **Pickle (7.d):** not written yet. Everything in `TEST_SCENARIOS.md` needs a running game, so a non-`@wip` Gherkin suite under `Tests/Pickle/` is still to write, with each `@requires:<packageId>` (the four optional mods) and any missing step asked from NPT.
+- **Pickle (7.d):** written 2026-11-11 under `Tests/Pickle/` (features 01 to 04, two maps), passes declared in `docs/TESTING.md`; not executed. Uses only existing ColonistRace steps; the missing power step is asked from NPT.

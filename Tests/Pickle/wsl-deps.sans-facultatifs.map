@@ -1,0 +1,6 @@
+# Hard dependencies resolved for the minimal pass; no optional integration is activated.
+reo.RimScent 3645569466
+nelim.rimscent.extended path:RimScentExtended/Mod
+# Colonist, building, item and mood thought steps of ColonistRace.
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools path:PickleTools/Tests/Pickle/StandaloneBase/Mod

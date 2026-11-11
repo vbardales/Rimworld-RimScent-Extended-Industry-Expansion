@@ -1,0 +1,9 @@
+# Minimal pass plus the four optional mods this mod patches (each is also in loadAfter).
+reo.RimScent 3645569466
+nelim.rimscent.extended path:RimScentExtended/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+nelim.pickletools path:PickleTools/Tests/Pickle/StandaloneBase/Mod
+det.epochstallow 3502180016
+det.epochsincense 3072579620
+mlie.medicalsupplements 2195037369
+ceteam.combatextended 2890901044
