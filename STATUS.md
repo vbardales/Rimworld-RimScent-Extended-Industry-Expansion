@@ -21,6 +21,7 @@ published: no
 tested_on: never
 remaining:
   - unverified: 8.c Pickle tickets filed 2026-11-11 at 077d41a: pass 1 (01, 02, no optionals) 20261111-181718-162-94c8 into Tests/Pickle/Inbox/pass1-initial; pass 3 (03-french, French) 20261111-181720-555-b6c2 into Tests/Pickle/Inbox/pass3-french; at RUN_DONE read summary.json then junit.xml, triage the Inbox
+  - unverified: 8.c pass 1 (94c8) read 2026-11-11: 3 of 11 green; S1-S5 red (thought absent: scenario never placed Larson nor sandboxed settings, fixed in 02-scents.feature Background), refiled as 20261111-183229-972-80f0 into Tests/Pickle/Inbox/pass1b-s1-s5; S8-S10 red (NPT power step, battery net none; NPT renamed it "is powered by a battery", patched at 4834293), scenarios switched to it, refiled as 20261111-183347-805-96f1 into Tests/Pickle/Inbox/pass1c-s8-s10; Inbox/pass1-initial to delete once 80f0 and 96f1 are read; b6c2 still pending
   - feature: PUBLICATION.md not written yet (not gallery work, can be done while tickets wait)
   - unverified: 8.c nothing has run in a game yet (Pickle passes 1 and 3 to file; pass 2 blocked: Epochs - Tallow 3502180016 and Epochs - Incense 3072579620 not on disk)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
