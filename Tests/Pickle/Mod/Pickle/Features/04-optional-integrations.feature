@@ -8,6 +8,8 @@ Feature: RimScent Industry Expansion optional integrations
   Background:
     Given the save "test-colony" is loaded
     Then mod "nelim.rimscent.extended.industry" is loaded
+    And Nelim's Pickle Tools: "Larson" stands at (106, 204)
+    And Nelim's Pickle Tools: the filth within 12 cells of the colonist "Larson" is removed
 
   Scenario: O1 a tallow wall lamp beside a colonist gives the tallow thought
     Given Nelim's Pickle Tools: the building "DV_TallowWallLamp" is spawned at (109, 204)

@@ -6,6 +6,7 @@ Feature: RimScent Industry Expansion scent thoughts reach a colonist
     Then mod "nelim.rimscent.extended.industry" is loaded
     And Nelim's Pickle Tools: the settings of the mod "nelim.rimscent.extended" are sandboxed at their defaults
     And Nelim's Pickle Tools: "Larson" stands at (106, 204)
+    And Nelim's Pickle Tools: the filth within 12 cells of the colonist "Larson" is removed
 
   Scenario: S1 mould filth beside a colonist gives the mould thought
     Given Nelim's Pickle Tools: 1 of the item "Filth_MoldyUniform" are spawned at (109, 204)
