@@ -1,28 +1,31 @@
 ---
+mod: RimScent Extended: Industry Expansion (unofficial)
+packageId: nelim.rimscent.extended.industry
+repo: Rimworld-RimScent-Extended-Industry-Expansion
+remote: https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git
+visibility: public
+detached: yes
+workflow_stage: makeSources
+licence: silent
+licence_at: "2026-09-22: Medieval Overhaul declares no licence; it served only as a checklist, RimScent (MIT) is a dependency"
+upstream_mod_remotes: N/A
 settings_audit: not_applicable
 localization: complete
 translation_en: complete
 translation_fr: unchecked
-mod:          RimScent Extended: Industry Expansion (unofficial)
-packageId:    nelim.rimscent.extended.industry
-repo:         Rimworld-RimScent-Extended-Industry-Expansion
-visibility:   public
-detached:     yes
-workflow_stage: setupRepo
-licence:      silent
-licence_at:   Medieval Overhaul declares no licence
 dependencies: declared
-showcase:     complete
-tested_on:
-workshop:
+showcase: complete
+workshop: 3811308567
+published: no
+tested_on: never
 remaining:
-  - defect: 1.h STATUS.md not built from templates/STATUS.template.md (missing remote, upstream_mod_remotes, published, tested_on value)
+  - defect: 2.b Mod/About/ModIcon.png (2026-09-03) older than Art/ModIcon-source.png (2026-10-08); regenerate with Render-Preview.cjs; Art/ModIcon.ico and ModIcon-source.png untracked
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: prepublication exists (Workshop id 3811308567, Mod/About/PublishedFileId.txt untracked); STATUS fields workshop and published not updated, file not committed
 session:      audit:      2026-09-22, static evidence only
-updated:      2026-11-11, 1.a duplicate check done 2026-11-11 (Search-Workshop, About.xml dependents of reo.RimScent: no other industry scent mod); first open 1.h
-protocols_read_sha: 816aff0264fc7d77b358ccfc5d1c08faa0a52717
+updated: 2026-11-11, replay-audit: 1.a to 1.k done, first open 2.b
+protocols_read_sha: 63fceb2b2095a769e91487f765d260f82863147f
 ---
 
 # RimScent Extended: Industry Expansion — status
