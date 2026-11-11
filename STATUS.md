@@ -5,7 +5,7 @@ repo: Rimworld-RimScent-Extended-Industry-Expansion
 remote: https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git
 visibility: public
 detached: yes
-workflow_stage: settings[1.0.0]
+workflow_stage: localize[1.0.0]
 licence: silent
 licence_at: "2026-09-22: Medieval Overhaul declares no licence; it served only as a checklist, RimScent (MIT) is a dependency"
 upstream_mod_remotes: N/A
@@ -20,14 +20,15 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
-  - defect: 5.g STATUS.md lacks a Settings audit section (inventory, decision, evidence, not_applicable justification)
+  - unverified: 6.c Check-DefInjected checked 0 keys on this run; the 2 gated French paths need their target defs
+  - defect: 6.h STATUS.md lacks a Translation audit section; 6.g French review by Virginie not done (translation_fr unchecked)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, replay-audit: 1.a to 5.f done, first open 5.g
-protocols_read_sha: d454cebad7bf5d49ad97a9ab5655f7de42e585ad
+updated: 2026-11-11, replay-audit: 1.a to 6.f done, first open 6.c
+protocols_read_sha: 6ed74bc56c6bf1b76aa440f6050b7a1c3c9a393b
 ---
 
 # RimScent Extended: Industry Expansion — status
@@ -230,3 +231,14 @@ Hard dependencies (`modDependencies`, both required by the patches, which target
 Optional integrations, each a `loadAfter` entry and an `IfModActive` folder in `LoadFolders.xml` (not hard dependencies, so not in `OptionalCompat.xml`, AUDIT 4.b): `det.epochsincense` (EpochsIncense), `det.epochstallow` (EpochsTallow), `mlie.medicalsupplements` (MedicalSupplements), `ceteam.combatextended` (CE).
 
 DLC: none required. `supportedVersions`: 1.6. No animal added, so the four animal integrations do not apply. Workshop required items: `n/a, not released yet` (decision of the owner, 2026-11-10: to be set by hand at prepareRelease or publish).
+
+## Settings audit (2026-11-11, revision 3e2961e)
+
+`settings_audit: not_applicable`.
+
+- **Inventory:** the mod is XML only. `git ls-files` lists no `.cs`, `.csproj` or `.dll`; the delivered `Mod/` holds `About`, `Defs`, `Patches`, `Languages`, the four optional folders and `LoadFolders.xml`. No `ModSettings`, `MainButtonDef`, `Keyed` resource or settings key appears in any XML.
+- **What the mod does:** its patches add RimScent smell thoughts to vanilla filth, industry, torch, chemfuel and drug defs, and eight own ThoughtDefs. The effect is the scent system of RimScent itself; this mod exposes no value a player would tune that RimScent or RimScent Extended does not already own.
+- **Decision:** no setting is useful. No settings page and no MainButtons shortcut are shipped (nothing empty, nothing hidden).
+- **Applied at:** not applicable (no setting, so no application moment or scope).
+- **Tests (MOD_SETTINGS.md section 4):** not applicable for the same reason. In-game confirmation that no empty page appears under Mod options stays `unverified` until `playTests`.
+- **Defects and unverified:** none beyond the `unverified` lines in `remaining`.
