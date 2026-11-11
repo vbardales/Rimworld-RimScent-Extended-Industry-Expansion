@@ -5,7 +5,7 @@ repo: Rimworld-RimScent-Extended-Industry-Expansion
 remote: https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git
 visibility: public
 detached: yes
-workflow_stage: localize[1.0.0]
+workflow_stage: writeTests[1.0.0]
 licence: silent
 licence_at: "2026-09-22: Medieval Overhaul declares no licence; it served only as a checklist, RimScent (MIT) is a dependency"
 upstream_mod_remotes: N/A
@@ -20,12 +20,13 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
+  - defect: 7.a TEST_SCENARIOS.md not checked against PUBLICATION.md (absent) and the numbers of the description; 7.b, 7.d, 7.e, 7.f, 7.h written records missing in STATUS.md (reason for no unit tests, Pickle sentence, tested sha)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, replay-audit: 1.a to 6.f done, first open 6.c
+updated: 2026-11-11, replay-audit: 1.a to 6.i done, French review validated, first open 7.a
 protocols_read_sha: e16d5d99f9517e078aaa6974917ffa44cc25dfaa
 ---
 
