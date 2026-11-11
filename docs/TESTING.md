@@ -14,7 +14,7 @@ No incompatible mod is declared, so no incompatibility pass.
 
 Not runnable yet:
 - Pass 2 needs Epochs - Tallow (3502180016) and Epochs - Incense (3072579620) on disk: `Check-FeatureDefs.js` reports both missing from the Workshop folder.
-- A powered crematorium or smelter (the "powered AND switched on" case) has no Pickle step: there is no step that gives a building power. To ask NPT; until then only the two negative cases (switched off, switched on but unpowered) are written (`02-scents` S6, S7).
+- Powered cases use the NPT steps "is powered" and "the power of the building ... is" (NPT bf92d0e, compiled, not played): `02-scents` S8 to S10.
 
 Offline, run from the repository root:
 

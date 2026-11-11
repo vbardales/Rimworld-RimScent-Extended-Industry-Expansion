@@ -21,7 +21,6 @@ published: no
 tested_on: never
 remaining:
   - unverified: 8.c nothing has run in a game yet (Pickle passes 1 and 3 to file; pass 2 blocked: Epochs - Tallow 3502180016 and Epochs - Incense 3072579620 not on disk)
-  - feature: a Pickle step that powers a building is asked from NPT (2026-11-11); positive crematorium and smelter scenarios stay unwritten until it exists
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
