@@ -21,7 +21,7 @@ published: no
 tested_on: never
 remaining:
   - unverified: 8.c Pickle tickets filed 2026-11-11 at 077d41a: pass 1 (01, 02, no optionals) 20261111-181718-162-94c8 into Tests/Pickle/Inbox/pass1-initial; pass 3 (03-french, French) 20261111-181720-555-b6c2 into Tests/Pickle/Inbox/pass3-french; at RUN_DONE read summary.json then junit.xml, triage the Inbox
-  - unverified: 8.c pass 1 (94c8) read 2026-11-11: 3 of 11 green; S1-S5 red (thought absent: scenario never placed Larson nor sandboxed settings, fixed in 02-scents.feature Background), refiled as 20261111-183229-972-80f0 into Tests/Pickle/Inbox/pass1b-s1-s5; S8-S10 red (NPT power step, battery net none; NPT renamed it "is powered by a battery", patched at 4834293), scenarios switched to it, refiled as 20261111-183347-805-96f1 into Tests/Pickle/Inbox/pass1c-s8-s10; Inbox/pass1-initial to delete once 80f0 and 96f1 are read; b6c2 still pending
+  - unverified: 8.c pass 1 (94c8) read 2026-11-11: 3 of 11 green; S1-S5 red (thought absent: scenario never placed Larson nor sandboxed settings, fixed in 02-scents.feature Background), refiled as 20261111-183229-972-80f0 into Tests/Pickle/Inbox/pass1b-s1-s5; S8-S10 red (NPT power step, battery net none; NPT renamed it "is powered by a battery", patched at 4834293), scenarios switched to it, refiled as 20261111-183347-805-96f1 into Tests/Pickle/Inbox/pass1c-s8-s10; Inbox/pass1-initial to delete once 80f0 and 96f1 are read; b6c2 read 2026-11-11: F1 red, Larson has no RimScentExtended_Scent_Mould (base DirtScent thoughts fire), same symptom as S1: suspect the Filth_MoldyUniform patch in Mod/Patches/Filth.xml lines 285-311 (no patch error in Player.log); check S1 and F1 together once 80f0 and 96f1 are read; Inbox/pass3-french to delete after triage
   - feature: PUBLICATION.md not written yet (not gallery work, can be done while tickets wait)
   - unverified: 8.c nothing has run in a game yet (Pickle passes 1 and 3 to file; pass 2 blocked: Epochs - Tallow 3502180016 and Epochs - Incense 3072579620 not on disk)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
@@ -30,7 +30,7 @@ remaining:
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
 updated: 2026-11-11, playTests: 2 Pickle tickets filed (passes 1 and 3), waiting for RUN_DONE
-protocols_read_sha: 1861c70dfe862f33f830d0250067fe4849fd0908
+protocols_read_sha: 5551bdc56480f68eafb436e1bb89d60ee6e4b213
 ---
 
 # RimScent Extended: Industry Expansion — status
