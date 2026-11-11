@@ -12,7 +12,7 @@ upstream_mod_remotes: N/A
 settings_audit: not_applicable
 localization: complete
 translation_en: complete
-translation_fr: unchecked
+translation_fr: complete
 dependencies: declared
 workshop_required_items: "n/a, not released yet"
 showcase: complete
@@ -20,15 +20,13 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
-  - unverified: 6.c Check-DefInjected checked 0 keys on this run; the 2 gated French paths need their target defs
-  - defect: 6.h STATUS.md lacks a Translation audit section; 6.g French review by Virginie not done (translation_fr unchecked)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
 updated: 2026-11-11, replay-audit: 1.a to 6.f done, first open 6.c
-protocols_read_sha: 6ed74bc56c6bf1b76aa440f6050b7a1c3c9a393b
+protocols_read_sha: e16d5d99f9517e078aaa6974917ffa44cc25dfaa
 ---
 
 # RimScent Extended: Industry Expansion — status
@@ -242,3 +240,11 @@ DLC: none required. `supportedVersions`: 1.6. No animal added, so the four anima
 - **Applied at:** not applicable (no setting, so no application moment or scope).
 - **Tests (MOD_SETTINGS.md section 4):** not applicable for the same reason. In-game confirmation that no empty page appears under Mod options stays `unverified` until `playTests`.
 - **Defects and unverified:** none beyond the `unverified` lines in `remaining`.
+
+## Translation audit (2026-11-11, revision 4a314e4)
+
+- **Where the French lives:** `Mod/Languages/French/DefInjected/ThoughtDef/` (four files) plus the gated `CE/` and `EpochsTallow/` folders. English is the source value in the Defs; no Keyed text, no code text.
+- **Coverage:** `Check-Translations.ps1` PASS (16 source texts and their French injections, no duplicate, no stale entry). `Check-DefInjected.ps1` with the mod, RimScent (3645569466) and RimScent Extended (3811307392) as targets: 18 keys checked, 0 errors, including the Combat Extended and Epochs Tallow keys.
+- **French rules:** all 18 strings read in full: no vous, tu or nous, no "(e)", no slash; nothing agrees with a pawn, so no gendered form is needed.
+- **Review:** ChatGPT review twice (2026-11-11): two wording fixes applied (smelter, pharmacy descriptions), the rest rejected with a reason (CE source text is external, supplied in `docs/translation-review-english.json`; `PUBLICATION.md` not written yet). French review by Virginie: validated on 2026-11-11 at revision 4a314e4 ("je valide la review"), no further correction.
+- **Not observed in game:** raw keys, fallback text and clipping in English and French stay `unverified` until `playTests`.
