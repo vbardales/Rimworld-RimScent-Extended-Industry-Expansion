@@ -5,7 +5,7 @@ repo: Rimworld-RimScent-Extended-Industry-Expansion
 remote: https://github.com/vbardales/Rimworld-RimScent-Extended-Industry-Expansion.git
 visibility: public
 detached: yes
-workflow_stage: declareDependencies[1.0.0]
+workflow_stage: settings[1.0.0]
 licence: silent
 licence_at: "2026-09-22: Medieval Overhaul declares no licence; it served only as a checklist, RimScent (MIT) is a dependency"
 upstream_mod_remotes: N/A
@@ -14,19 +14,20 @@ localization: complete
 translation_en: complete
 translation_fr: unchecked
 dependencies: declared
+workshop_required_items: "n/a, not released yet"
 showcase: complete
 workshop: 3811308567
 published: no
 tested_on: never
 remaining:
-  - defect: 4.a About.xml nelim.rimscent.extended lacks the Workshop id (item 3811307392); 4.g dated dependency record and workshop_required_items missing in STATUS.md
+  - defect: 5.g STATUS.md lacks a Settings audit section (inventory, decision, evidence, not_applicable justification)
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, replay-audit: 1.a to 4.f done, first open 4.a
-protocols_read_sha: 45357975862be47b344cc129a47910946cba3ac9
+updated: 2026-11-11, replay-audit: 1.a to 5.f done, first open 5.g
+protocols_read_sha: d454cebad7bf5d49ad97a9ab5655f7de42e585ad
 ---
 
 # RimScent Extended: Industry Expansion — status
@@ -219,3 +220,13 @@ The stage remains `preTest`. To reach `done`, this repository needs its own
 written, non-`@wip` Gherkin coverage for the behaviour that only a running game
 can show. To reach `tested`, all of those scenarios, including each conditional
 integration pass, must finish green and leave no manual validation pending.
+
+## Dependencies (2026-11-11, revision 486705a)
+
+Hard dependencies (`modDependencies`, both required by the patches, which target RimScent defs and RimScent Extended shared scents):
+- `reo.RimScent`, Workshop 3645569466.
+- `nelim.rimscent.extended`, Workshop 3811307392, source https://github.com/vbardales/Rimworld-RimScent-Extended.
+
+Optional integrations, each a `loadAfter` entry and an `IfModActive` folder in `LoadFolders.xml` (not hard dependencies, so not in `OptionalCompat.xml`, AUDIT 4.b): `det.epochsincense` (EpochsIncense), `det.epochstallow` (EpochsTallow), `mlie.medicalsupplements` (MedicalSupplements), `ceteam.combatextended` (CE).
+
+DLC: none required. `supportedVersions`: 1.6. No animal added, so the four animal integrations do not apply. Workshop required items: `n/a, not released yet` (decision of the owner, 2026-11-10: to be set by hand at prepareRelease or publish).
