@@ -27,7 +27,7 @@ remaining:
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
 updated: 2026-11-11, replay-audit: 1.a to 6.i done, French review validated, first open 7.a
-protocols_read_sha: e16d5d99f9517e078aaa6974917ffa44cc25dfaa
+protocols_read_sha: db692bebc9ba2f8212ad6d1086a6b6f7f3d80cb1
 ---
 
 # RimScent Extended: Industry Expansion — status
