@@ -16,6 +16,12 @@ Prerequisites: RimScent and RimScent Extended enabled; no optional integration m
 5. Expected: torch scent follows active fuel use; chemfuel applies its intended upstream fuel scent.
 6. Spawn representative mould and slime filth and inspect the resulting thoughts.
 7. Expected: the new local thoughts use their translated label and description without errors.
+8. Place a biofuel refinery and a chemfuel tank, and store chemfuel in a stockpile; stand a pawn nearby.
+9. Expected: the refinery, the tank and the stored chemfuel each apply their scent thought; chemfuel out of storage does not.
+10. Hold synthetic drugs and neutroamine in a pawn's reach or in storage and inspect the thoughts.
+11. Expected: the pharmacy scent applies to the drugs and to neutroamine, as the description promises.
+12. Spawn each of the 22 filth types the patches cover (see `Mod/Patches/Filth.xml`) and inspect the thought of each.
+13. Expected: each applies the thought its patch names; `Filth_FireFoam` uses `RimScent_FirefoamScent` and `Filth_BlastMark` the explosion thought; no filth type applies two thoughts.
 
 ## Optional integrations
 

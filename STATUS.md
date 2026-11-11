@@ -20,13 +20,13 @@ workshop: 3811308567
 published: no
 tested_on: never
 remaining:
-  - defect: 7.a TEST_SCENARIOS.md not checked against PUBLICATION.md (absent) and the numbers of the description; 7.b, 7.d, 7.e, 7.f, 7.h written records missing in STATUS.md (reason for no unit tests, Pickle sentence, tested sha)
+  - defect: 7.d no Pickle suite written yet (Gherkin only in TEST_SCENARIOS.md); steps to ask from NPT
   - defect: Art/echo.png and ModIcon-signature-candidate.png off the closed Art/ set
   - unverified: no non-wip Pickle Gherkin suite has been written or run; every conditional integration requires its own completed pass before tested
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-11, replay-audit: 1.a to 6.i done, French review validated, first open 7.a
+updated: 2026-11-11, writeTests: 7.a to 7.c and 7.e to 7.h recorded, first open 7.d
 protocols_read_sha: db692bebc9ba2f8212ad6d1086a6b6f7f3d80cb1
 ---
 
@@ -249,3 +249,10 @@ DLC: none required. `supportedVersions`: 1.6. No animal added, so the four anima
 - **French rules:** all 18 strings read in full: no vous, tu or nous, no "(e)", no slash; nothing agrees with a pawn, so no gendered form is needed.
 - **Review:** ChatGPT review twice (2026-11-11): two wording fixes applied (smelter, pharmacy descriptions), the rest rejected with a reason (CE source text is external, supplied in `docs/translation-review-english.json`; `PUBLICATION.md` not written yet). French review by Virginie: validated on 2026-11-11 at revision 4a314e4 ("je valide la review"), no further correction.
 - **Not observed in game:** raw keys, fallback text and clipping in English and French stay `unverified` until `playTests`.
+
+## writeTests record (2026-11-11, revision 529bab4)
+
+- **Scenarios (7.a):** `TEST_SCENARIOS.md` holds 13 base-game steps, 4 optional integrations and the regression pass. Checked against the English description: the 22 filth types (22 distinct `Filth_*` defNames in `Mod/Patches/Filth.xml`), the own mould and slime thoughts, the Firefoam and Explosion thoughts wired, refinery, tank, stored chemfuel, drugs and neutroamine now each have a step. "RimScent covers 12 of 42 filth types" is a claim about upstream, unchecked. `PUBLICATION.md` does not exist yet (writeDocs).
+- **Automated tests (7.b, 7.c, 7.e):** no unit-test project, because the mod is XML only with no C#. Harness: `Tests/Check-Mod.ps1` (dependencies, loadAfter and LoadFolders gates; validated in `scripts/LOCAL_SCRIPTS.md`), run 2026-11-11: PASS. Shared checks run 2026-11-11: `Check-ModBasics` PASS (21 XML files), `Check-Translations` PASS, `Check-DefInjected` 18 keys 0 errors.
+- **Tested revision (7.f):** 529bab4 for the static checks above. No game run has happened.
+- **Pickle (7.d):** not written yet. Everything in `TEST_SCENARIOS.md` needs a running game, so a non-`@wip` Gherkin suite under `Tests/Pickle/` is still to write, with each `@requires:<packageId>` (the four optional mods) and any missing step asked from NPT.
