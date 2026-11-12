@@ -74,7 +74,7 @@ keep a single reduced review capture only when it is the sole proof of a visual
 claim. Keep `Player.log` only for a failing or incomplete run. Delete
 `report.html`, `messages.ndjson`, duplicate captures, films, and superseded
 pass directories after recording the verdict, tested SHA, pass map, language,
-and retained-file names in a short committed summary under `docs/runs/`.
+and retained-file names in a short committed summary under `Docs/runs/`.
 
 No evidence directory is currently present or tracked, and no `.dds` asset is
 tracked. The `.gitignore` rules prevent either class of generated artifact

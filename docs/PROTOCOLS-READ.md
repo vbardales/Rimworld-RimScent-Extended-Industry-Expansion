@@ -35,12 +35,12 @@ so a later change alone does not trigger an unnecessary reread.
 | `PUBLICATION.md` | absent at read time | absent | Required before a CI/publication workflow; not present locally. |
 | `TESTING.md` | absent at read time | absent | No local file existed. |
 | `BACKLOG.md` | absent at read time | absent | The mod-local file did not exist; the monorepo backlog was deliberately not read. |
-| `docs/runs/` | absent at read time | absent | No committed run summaries exist. |
+| `Docs/runs/` | absent at read time | absent | No committed run summaries exist. |
 | `Tests/Pickle/` | absent at read time | absent | No local Gherkin suite or Pickle evidence directory exists. |
 | `Mod/About/About.xml` | commit `d1210d9`; SHA-256 `5DFDC297C18F` | use | Delivered metadata and declared dependencies. |
 | `NOTES.md` | absent at read time | absent | No local file existed. |
 | `BUGS.md` | absent at read time | absent | No local file existed. |
-| `docs/PROTOCOLS-READ.md` | created by this record | use | This reading/version ledger. |
+| `Docs/PROTOCOLS-READ.md` | created by this record | use | This reading/version ledger. |
 
 ## Consequences retained
 
