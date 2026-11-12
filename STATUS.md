@@ -28,8 +28,8 @@ remaining:
   - unverified: functional effects, logs, English/French display, and save behaviour have never been observed; no manual check may remain pending for tested
   - defect: Mod/About/PublishedFileId.txt (id 3811308567) is untracked
 session:      audit:      2026-09-22, static evidence only
-updated: 2026-11-12, playTests: 3 Pickle tickets filed (54d5, cf0b, aea0), waiting for RUN_DONE
-protocols_read_sha: 3937f9048f97c0e3cd28ab4c492ddef003895f23
+updated: 2026-11-12, playTests: 54d5, cf0b, aea0 exited 1 with no report (filed without -DepMap, no mods loaded); Inbox folders deleted; refiled 779a (pass 1, S1-S5 S8-S10) and 29a9 (pass 3 French) with the map at 74d00b4, waiting for RUN_DONE; pass 2 (aea0) not refiled, Epochs Tallow and Incense missing on disk
+protocols_read_sha: ed905476e9fb34ccdfdac687aaac1f9fd87751f4
 ---
 
 # RimScent Extended: Industry Expansion — status
