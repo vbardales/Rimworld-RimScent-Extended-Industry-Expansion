@@ -8,3 +8,5 @@ Source/bin/
 .testdeps/
 *.dds
 Tests/Pickle/Evidence/
+desktop.ini
+Art/.render/
