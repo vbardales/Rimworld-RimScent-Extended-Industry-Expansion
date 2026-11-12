@@ -10,3 +10,5 @@ Source/bin/
 Tests/Pickle/Evidence/
 desktop.ini
 Art/.render/
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/
